@@ -1,0 +1,31 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/**/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "src",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "bearerAuth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "scheme": "bearer",
+        "in": "header"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "src/routes",
+    "middleware": "express"
+  },
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@entities/*": ["./entities/*"],
+      "@type/*": ["./types/*"],
+      "@db/*": ["./db/*"],
+      "@config/*": ["./config/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  }
+}
