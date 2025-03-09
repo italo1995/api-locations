@@ -49,7 +49,7 @@ Para ejecutar las migraciones y configurar la base de datos, sigue estos pasos:
 # Estructura del archivo `locations.json`
 1. Para generar la base de datos automáticamente utilizando el endpoint `GET /countries/loadData`, es necesario proporcionar un archivo `locations.json` estructurado correctamente. A continuación, se muestra un ejemplo de cómo debería verse:
 
-```json
+  ```json
     [
       {
         "id": 239,
